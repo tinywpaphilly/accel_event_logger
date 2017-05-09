@@ -34,11 +34,15 @@ float d_ay;
 float az;
 float last_az;
 float d_az;
-
-float threshold = 25;
-
 int loopcount = 0;
 int loops2ave = 10;
+
+
+float threshold = 50;
+int timmer = 1000;
+
+//char filename = "";
+char filename = "AccelEvnt.csv";
 
 
 
@@ -187,7 +191,7 @@ void loop () {
       loopcount++;
 
       //Wait 
-      delay(1000);
+      delay(timmer);
     };
 
 
